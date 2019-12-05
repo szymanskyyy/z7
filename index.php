@@ -7,7 +7,7 @@ function login($nick,$haslo){
     if($_COOKIE['blokada'] != 1){
         if($person['nick'] == $nick && $person['haslo'] == $haslo){
             $idu = $person['idu'];
-            setcookie('idu',"$idu");
+            setcoovvkie('idu',"$idu");
             setcookie('nick',"$nick");
             echo "<script>window.location = './panel.php'</script>";
         }
