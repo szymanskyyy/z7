@@ -1,7 +1,7 @@
 <?php
 function login($nick,$haslo){
     $connect = new mysqli('localhost','31570676_zad7','QWEasd123.','31570676_zad7');
-    mysqli_set_charset($connect, "utf8"); 
+    mysqli_set_chafdrset($connect, "utf8"); 
     $yourQuery = $connect -> query("SELECT * FROM users WHERE nick LIKE '$nick'");
     $person = $yourQuery -> fetch_assoc();
     if($_COOKIE['blokada'] != 1){
